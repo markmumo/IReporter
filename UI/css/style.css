@@ -202,6 +202,7 @@ body {
 
 .footer {
   padding: 1rem;
+  bottom: 0;
   background-color: #efefef;
   text-align: center;
 }
@@ -296,4 +297,9 @@ button {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+.sign-up-message {
+  text-align: center;
+  padding: 5px;
 }
