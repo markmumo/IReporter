@@ -1,0 +1,207 @@
+/* navbar */
+:root {
+  --color-primary: #b80c09;
+  --color-secondary-light: #01baef;
+  --color-secondary-dark: #0b4f6c;
+
+  --color-secondary-light-8: rgba(1, 187, 239, 0.8);
+  --color-secondary-dark-8: rgba(11, 79, 108, 0.8);
+
+  --color-gray-light: #fbfbff;
+  --color-gray-dark: #040f16;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  font-size: 18px;
+  background: var(--color-gray-dark);
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.first-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.links,
+.main-logo {
+  text-decoration: none;
+  color: var(--color-gray-light);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.main-logo img {
+  background: white;
+  border-radius: 50%;
+  padding: 0.2rem;
+  width: 2.5rem;
+}
+
+.first-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.main-logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: var(--color-gray-light);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .first-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .first-nav li {
+    margin: 0;
+  }
+
+  .links {
+    margin-left: 40px;
+  }
+
+  .main-logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .main-logo:hover,
+  .links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/* banner/header */
+
+.banner {
+  background-image: linear-gradient(to right,
+    var(--color-secondary-light-8),
+    var(--color-secondary-dark-8)),
+    url("../img/taxes-tax-evasion-police-handcuffs.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner_container {
+  padding: 15vh 0 0 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner_container--title {
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.banner_container--desc {
+  font-size: 1.2rem;
+}
+
+/* features */
+
+.feature {
+  background: var(--color-gray-light);
+}
+
+.container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container h1 {
+  text-align: center;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.3rem solid var(--color-secondary-dark);
+}
+
+.features_container-title {}
+
+.feature-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid rgba(4, 15, 22, 0.8);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  width: 30rem;
+  margin: 3rem 0 3rem 0;
+}
+
+.card img {
+  width: 100%;
+  height: 20%;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.card-desc {
+  font-size: 1rem;
+}
+
+/* footer */
+
+.footer {
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
