@@ -149,7 +149,7 @@ body {
 }
 
 .container {
-  padding: 3rem;
+  /*padding: 3rem;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,7 +226,7 @@ body {
 }
 
 form {
-  background-color: rgb(172, 167, 167);
+  background-color: rgba(1, 187, 239, 0.8);
   padding: 3rem;
   border-radius: 8px;
   display: flex;
@@ -307,7 +307,7 @@ button {
 /* USER PROFILE SIDE PANEL STYLING. */
 .panel {
   width: 20rem;
-  height: 20rem;
+  height: 100%;
   background-color: #22313F;
   float: left;
 }
@@ -337,6 +337,10 @@ button {
   width: 80rem;
   float: right;
   margin-left: 5px;
+}
+
+.main-panel .btn-1 {
+  text-align: center;
 }
 
 .main-panel .main-panel__box {
@@ -383,4 +387,137 @@ button {
 .main-panel .main-panel__box-body .icon4 {
   font-size: 5rem;
   color: #049372
+}
+
+/* create a red flag button design */
+.main-panel .btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem;
+  width: auto;
+  margin-top: 5px;
+  display: inline-block;
+  border-radius: 1.5rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1rem;
+  cursor: pointer;
+  background: rgba(1, 187, 239, 0.8);
+  color: #fff;
+}
+
+
+.btn:hover {
+  transform: translateY(.1rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* RED FLAG STYLING */
+/* Table styling */
+.table {
+  margin-top: 5.5rem;
+  text-align: center;
+}
+
+
+.red-flag-form {
+  margin-top: 1rem;
+  background-color: rgba(1, 187, 239, 0.8) !important;
+  font-size: 1.2rem;
+  width: 80%;
+  margin-left: 8rem;
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: .1rem solid #dddddd;
+  text-align: left;
+  padding: .8rem;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(1, 187, 239, 0.8);
+  color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #EEEEEE;
+  color: #2C3E50;
+}
+
+
+.main-panel .btn-1 {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .5rem;
+  text-align: center;
+  width: 50%;
+  margin-top: 5px;
+  display: inline-block;
+  border-radius: .8rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1rem;
+  background: rgba(1, 187, 239, 0.8);
+  color: #fff;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+input[type='text'] {
+  padding: .5rem;
+  border-radius: .4rem;
+  width: 100%;
+  margin: .8rem 0;
+  border-radius: .4rem;
+  box-sizing: border-box;
+
+}
+
+input[type='file'] {
+  padding: .3rem;
+  border-radius: .4rem;
+  width: 100%;
+  margin: .8rem 0;
+  border-radius: .4rem;
+  box-sizing: border-box;
+
+}
+
+input[type='submit'] {
+  padding: .5rem;
+  border-radius: .5rem;
+  margin-top: .5rem;
+  background-color: #22313F;
+  color: #fff;
+  font-size: 1rem;
+
+}
+
+input[type='text']::selection {
+  color: none;
+  background: none;
+}
+
+.update a {
+  color: #ECF0F1;
+  background: #ff8f00;
+  padding: .8rem;
+  border-radius: .9rem;
+}
+
+.delete a {
+  color: #ECF0F1;
+  background: #f44336;
+  padding: .8rem;
+  border-radius: .9rem;
 }
