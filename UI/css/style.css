@@ -303,3 +303,84 @@ button {
   text-align: center;
   padding: 5px;
 }
+
+/* USER PROFILE SIDE PANEL STYLING. */
+.panel {
+  width: 20rem;
+  height: 20rem;
+  background-color: #22313F;
+  float: left;
+}
+
+.panel-body {
+  margin: .5rem;
+  padding: 1rem;
+}
+
+.panel-body ul>li {
+  text-decoration: none;
+  margin: 1.5rem;
+  list-style: none;
+}
+
+.panel-body ul li a {
+  color: #fbfbff;
+  text-decoration: none;
+}
+
+.panel-body ul li a:hover {
+  color: #fbfbff;
+}
+
+/* USER PROFILE MAIN PANEL STYLING. */
+.main-panel {
+  width: 80rem;
+  float: right;
+  margin-left: 5px;
+}
+
+.main-panel .main-panel__box {
+  width: 13.5rem;
+  height: 10rem;
+  background: #ECEFF1;
+  margin-left: 8px;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.main-panel a {
+  text-decoration: none;
+  float: left;
+}
+
+.main-panel .main-panel__box-header {
+  padding: .5rem;
+  color: #2c3e50;
+
+}
+
+.main-panel .main-panel__box-body {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.main-panel .main-panel__box-body .icon1 {
+  font-size: 5rem;
+  color: #22313F;
+}
+
+.main-panel .main-panel__box-body .icon2 {
+  font-size: 5rem;
+  color: #CF000F;
+}
+
+.main-panel .main-panel__box-body .icon3 {
+  font-size: 5rem;
+  color: #1BBC9B;
+}
+
+.main-panel .main-panel__box-body .icon4 {
+  font-size: 5rem;
+  color: #049372
+}
