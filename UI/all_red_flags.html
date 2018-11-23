@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>IReporter | home page</title>
+    <title>IReporter | Admin Dashboard</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
 
@@ -39,24 +39,27 @@
     <!-- features -->
     <section class="feature">
         <div class="container">
-            <h1 class="feature_container-title">iReporter User Dashboard</h1>
+            <h1 class="feature_container-title">iReporter Admin Dashboard</h1>
             <div class="feature-card">
                 <div class="panel">
                     <div class="panel-title">
                         <div class="panel-body">
                             <ul>
-                                <li><a href="profile.html">Dashboard</a></li>
-                                <li><a href="manage_red_flag.html">Manage red flag </a></li>
-                                <li><a href="manage_intervention.html">Manage intervention</a></li>
-                                <li><a href="#">Account settings </a></li>
+                                <ul>
+                                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                                    <li><a href="all_red_flags.html">Manage red flag </a></li>
+                                    <li><a href="interventions.html">Manage intervention</a></li>
+                                    <li><a href="manage_users.html">Manage Users</a></li>
+                                    <li><a href="#">Account settings </a></li>
+                                </ul>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="main-panel">
-                    <a href="create_redflag.html">
+                    <a href="#">
                         <div class="btn">
-                            create a new red flag
+                            View All Red Flags
                         </div>
                     </a>
                     <div class="table">
@@ -65,32 +68,27 @@
                                 <th>Incident</th>
                                 <th>location</th>
                                 <th>Contact</th>
+                                <th>Email</th>
                                 <th>Image</th>
                                 <th>Date</th>
                                 <th>Status</th>
-                                <th>Update</th>
-                                <th>Delete</th>
+                                <th>Open</th>
                             </tr>
                             <tr>
 
                                 <td>Corruption</td>
                                 <td>Thika road</td>
                                 <td>0717 445 860</td>
+                                <td>example@gmail.com</td>
                                 <td><img src="img/d1.jpg" width="80" height="80"></td>
                                 <td>22/ 11 / 2018</td>
                                 <td>
-                                    <span class="resolved"> Resolved</span>
+                                    <span class="draft-1">Draft</span>
                                 </td>
                                 <td>
-                                    <span class="update">
-                                        <a href="#">Update</a>
-                                    </span>
+                                    <span class="open"><a href="read_red_flags.html"> Open</a></span>
                                 </td>
-                                <td>
-                                    <span class="delete">
-                                        <a href="#">Delete</a>
-                                    </span>
-                                </td>
+
                             </tr>
 
                             </tr>
@@ -99,44 +97,33 @@
                                 <td>Corruption</td>
                                 <td>Thika road</td>
                                 <td>0717 445 860</td>
+                                <td>example@gmail.com</td>
                                 <td><img src="img/d1.jpg" width="80" height="80"></td>
                                 <td>22/ 11 / 2018</td>
                                 <td>
-                                    <span class="rejected"> Rejected</span>
+                                    <span class="rejected"> Reject</span>
                                 </td>
                                 <td>
-                                    <span class="update">
-                                        <a href="#">Update</a>
-                                    </span>
+                                    <span class="open"><a href="#"> Open</a></span>
                                 </td>
-                                <td>
-                                    <span class="delete">
-                                        <a href="#">Delete</a>
-                                    </span>
-                                </td>
+
                             </tr>
-
-
                             <tr>
 
                                 <td>Corruption</td>
                                 <td>Thika road</td>
                                 <td>0717 445 860</td>
+                                <td>example@gmail.com</td>
                                 <td><img src="img/d1.jpg" width="80" height="80"></td>
                                 <td>22/ 11 / 2018</td>
                                 <td>
                                     <span class="draft">Under investigation</span>
                                 </td>
                                 <td>
-                                    <span class="update">
-                                        <a href="#">Update</a>
-                                    </span>
+                                    <span class="open"><a href="#"> Open</a></span>
                                 </td>
-                                <td>
-                                    <span class="delete">
-                                        <a href="#">Delete</a>
-                                    </span>
-                                </td>
+
+
                             </tr>
                         </table>
                     </div>
